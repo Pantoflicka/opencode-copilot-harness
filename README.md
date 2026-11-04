@@ -28,16 +28,16 @@ Podporuje **OpenCode 2.x** (nový formát `agents`/`permissions`) i **1.x** (`ag
 
 ## Instalace
 
-Přímo z GitHubu (nahraďte `UZIVATEL` svým účtem):
+Přímo z GitHubu:
 
 ```powershell
-npx github:UZIVATEL/opencode-copilot-harness install --profile uspora
+npx github:Pantoflicka/opencode-copilot-harness install --profile uspora
 ```
 
 Nebo naklonovat a spustit lokálně:
 
 ```powershell
-git clone https://github.com/UZIVATEL/opencode-copilot-harness.git
+git clone https://github.com/Pantoflicka/opencode-copilot-harness.git
 cd opencode-copilot-harness
 node bin/och.js install --profile uspora
 ```

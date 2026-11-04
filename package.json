@@ -8,10 +8,30 @@
     "och": "bin/och.js",
     "opencode-copilot-harness": "bin/och.js"
   },
-  "files": ["bin", "src", "catalog", "templates", "README.md", "LICENSE"],
-  "engines": { "node": ">=18.17" },
+  "files": [
+    "bin",
+    "src",
+    "catalog",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
   "scripts": {
     "test": "node --test"
   },
-  "keywords": ["opencode", "github-copilot", "agents", "llm", "cost"]
+  "keywords": [
+    "opencode",
+    "github-copilot",
+    "agents",
+    "llm",
+    "cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pantoflicka/opencode-copilot-harness.git"
+  },
+  "homepage": "https://github.com/Pantoflicka/opencode-copilot-harness"
 }
