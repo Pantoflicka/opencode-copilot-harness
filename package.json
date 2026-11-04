@@ -1,0 +1,17 @@
+{
+  "name": "opencode-copilot-harness",
+  "version": "0.1.0",
+  "description": "Sada agentů pro OpenCode, která volí modely GitHub Copilotu tak, aby šetřila AI kredity.",
+  "license": "MIT",
+  "author": "Robin Jiran",
+  "bin": {
+    "och": "bin/och.js",
+    "opencode-copilot-harness": "bin/och.js"
+  },
+  "files": ["bin", "src", "catalog", "templates", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["opencode", "github-copilot", "agents", "llm", "cost"]
+}

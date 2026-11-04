@@ -1,0 +1,39 @@
+{
+  "_note": "Pro každou roli seznam kandidátů podle priority. Vybere se první, který vám OpenCode u poskytovatele github-copilot opravdu nabízí.",
+  "profiles": {
+    "uspora": {
+      "label": "Úspora (vhodné pro Copilot Pro)",
+      "roles": {
+        "copilot":     ["gpt-6.1-sol", "claude-sonnet-5.5", "gpt-6-sol", "claude-sonnet-5", "gpt-5.6-luna", "gpt-6-luna"],
+        "quick":       ["gpt-6-luna", "claude-haiku-5.5", "mai-code-1.1-flash", "gpt-5.6-luna", "gemini-3.8-flash"],
+        "scout":       ["gpt-6-luna", "claude-haiku-5.5", "mai-code-1.1-flash", "gpt-5.6-luna", "gemini-3.8-flash"],
+        "implementer": ["claude-sonnet-5.5", "gpt-6.1-sol", "gpt-6-sol", "claude-sonnet-5", "gpt-5.3-codex"],
+        "architect":   ["gpt-6.1-sol", "claude-sonnet-5.5", "gpt-6-sol", "claude-sonnet-5"],
+        "reviewer":    ["gpt-6.1-sol", "claude-sonnet-5.5", "gpt-6-sol", "claude-sonnet-5", "gemini-3.8-flash"]
+      }
+    },
+    "vyvazeny": {
+      "label": "Vyvážený (Pro i Pro+)",
+      "roles": {
+        "copilot":     ["claude-sonnet-5.5", "gpt-6.1-sol", "gpt-6-sol", "claude-sonnet-5"],
+        "quick":       ["gpt-6-luna", "claude-haiku-5.5", "mai-code-1.1-flash", "gpt-5.6-luna"],
+        "scout":       ["claude-haiku-5.5", "gpt-6-luna", "mai-code-1.1-flash", "gpt-5.6-luna"],
+        "implementer": ["claude-sonnet-5.5", "gpt-6.1-sol", "gpt-6-sol", "claude-sonnet-5"],
+        "architect":   ["claude-opus-5.5", "gpt-6.1-sol", "claude-sonnet-5.5"],
+        "reviewer":    ["gpt-6.1-sol", "claude-sonnet-5.5", "gpt-6-sol", "gemini-4-argon"]
+      }
+    },
+    "vykon": {
+      "label": "Výkon (Copilot Pro+ / Max)",
+      "roles": {
+        "copilot":     ["claude-opus-5.5", "claude-sonnet-5.5", "gpt-6.1-sol"],
+        "quick":       ["claude-haiku-5.5", "gpt-6-luna", "mai-code-1.1-flash"],
+        "scout":       ["claude-haiku-5.5", "gpt-6-luna", "gpt-5.6-luna"],
+        "implementer": ["claude-sonnet-5.5", "gpt-6.1-sol", "claude-opus-5.5"],
+        "architect":   ["claude-opus-5.5", "gpt-6-astra", "gpt-6.1-sol"],
+        "reviewer":    ["gpt-6.1-sol", "claude-opus-5.5", "gpt-6-astra", "claude-sonnet-5.5"]
+      }
+    }
+  },
+  "diversify": { "reviewer": "implementer" }
+}
