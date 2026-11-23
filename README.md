@@ -99,3 +99,7 @@ Odhad „kreditů na krok“ počítá s typickým krokem agenta: 40K tokenů ko
 ## Licence
 
 MIT
+
+## Ruční sada bez instalátoru
+
+Ve složce [`presets/rucni-sada`](presets/rucni-sada) je hotová statická konfigurace pro OpenCode 2 (GPT-6.2 Sol jako hlavní model, GPT-6 Luna a Claude Haiku 5.5 pro subagenty), kterou stačí zkopírovat do `%USERPROFILE%\.config\opencode`. Postup je v jejím README.
