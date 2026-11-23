@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Na tarifu Pro nahraďte gpt-6.2-sol za claude-sonnet-5.5 a blok "providers" smažte.
+  "model": "github-copilot/gpt-6.2-sol",
+  "providers": {
+    "github-copilot": {
+      "models": {
+        "gpt-6.2-sol": {
+          // Strop pod 272K, nad kterým se účtuje dvojnásobná cena vstupu.
+          "limit": { "context": 250000, "input": 250000, "output": 32000 }
+        }
+      }
+    }
+  },
+  "agents": {
+    "plan":  { "mode": "primary", "model": "github-copilot/gpt-6.2-sol" },
+    "build": { "mode": "primary", "model": "github-copilot/gpt-6.2-sol" },
+    // Subagenti (explore, review, agent-test) jsou v agents/*.md.
+    "title": { "model": "github-copilot/gpt-6-luna" }
+  },
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "subagent", "resource": "*", "effect": "allow" }
+  ],
+  "compaction": { "auto": true, "keep": { "tokens": 15000 }, "buffer": "15%" },
+  "update": "notify"
+}
